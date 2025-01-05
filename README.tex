@@ -1,0 +1,81 @@
+\documentclass[a4paper,11pt]{report}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{mystyle}
+
+%% The below lines are for formatting.
+\theoremstyle{plain}
+
+%% this allows for theorems which are not automatically numbered
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{definition*}{Definition}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{example*}{Example}
+\newtheorem*{note*}{Note}
+\newtheorem*{property*}{Property}
+\newtheorem*{remark*}{Remark}
+
+% this allows for theorems which are automatically numbered
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{example}{Example}
+\newtheorem{property}{Property}
+\newtheorem{remark}{Remark}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+
+\usepackage{lineno}
+
+%% Declare argmin
+\DeclareMathOperator*{\argmin}{argmin} % no space, limits underneath in displays
+\DeclareMathOperator*{\argmax}{argmax} % no space, limits underneath in displays
+
+%% For toprule and bottomrule with double lines in tables.
+\newcommand{\dtoprule}{\specialrule{1pt}{0pt}{0.4pt}%
+            \specialrule{0.3pt}{0pt}{\belowrulesep}%
+            }
+\newcommand{\dbottomrule}{\specialrule{0.3pt}{0pt}{0.4pt}%
+            \specialrule{1pt}{0pt}{\belowrulesep}%
+            }
+
+%% For Normal Distribution
+\newcommand\gauss[2]{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))} % Gauss function, parameters mu and sigma
+
+%%
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+%% For line spacing
+\onehalfspacing % 1.5 line spacing 
+
+%% The document starts here
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{6cm}
+            
+        \Huge
+        \textbf{Time Series Analysis Lecture Note}
+            
+        \vspace{0.5cm}
+            
+        \vspace{1.5cm}
+         
+        \Large   
+        \textbf{Hyun Jae Chu}\footnote[1]{Korea University, Department of Economics, E-mail: stephenchu@korea.ac.kr}
+            
+        \vspace{0.8cm}
+            
+        \Large
+        Economics Department\\
+        November 15, 2022\\
+
+        \vfill
+        \large \textbf{Note: Please feel free to comment wrong explanations or typos via e-mail. This lecture note was created for the purpose of self-study based on the content of Professor Dukpa Kim's Time Series Analysis class. Redistribution is strictly prohibited as it contains portions directly taken from the lecture notes of Professor Dukpa Kim.}
+        \vspace{0.8cm}
+            
+    \end{center}
+\end{titlepage}
+
+\end{document}
